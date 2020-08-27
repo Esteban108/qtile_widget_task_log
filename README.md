@@ -27,6 +27,7 @@ widgets_list = [
 ## Parameters
 TextBox base http://docs.qtile.org/en/latest/manual/ref/widgets.html#libqtile.widget.TextBox
 ### Customs
+* start_date: last datetime saved
 <table>
         <tr>
                 <td><h4>Key</h4></td>
