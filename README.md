@@ -8,7 +8,20 @@ A widget that allows you to log tasks in a file.
 
 ## Setup
 ```bash
-pip install git+https://github.com/ping/qtile_widget_task_log
+pip install git+https://github.com/Esteban108/qtile_widget_task_log
+```
+```python
+#  config.py
+from libqtile.widget.prompt import Prompt
+from task_log import TaskLog
+
+#  ...
+
+widgets_list = [
+    Prompt(),
+    TaskLog()
+]
+#  ...
 ```
 
 ## Parameters
@@ -40,7 +53,7 @@ TextBox base http://docs.qtile.org/en/latest/manual/ref/widgets.html#libqtile.wi
 
 <tr>
     <td> get_time</td>
-    <td>lambda start_date: round((datetime.now() - start_date).seconds / 60, 2)</td>
+    <td>lambda start_date: round((datetime.now() - start_date).seconds / 60, 1)</td>
     <td>function to get time; return int/float</td>
 </tr>
 

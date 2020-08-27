@@ -10,7 +10,7 @@ class TaskLog(base.InLoopPollText):
         ('format', 'minutes: {time}', 'Display format'),
         ('prompt_name', 'prompt', 'Prompt use for get the task text'),
         ('prompt_text', 'task: ', 'The text showing on prompt'),
-        ('get_time', lambda start_date: round((datetime.now() - start_date).seconds / 60, 2),
+        ('get_time', lambda start_date: round((datetime.now() - start_date).seconds / 60, 1),
          'function to get time; return int/float'),
         ('file_path', '~/tasks.log', 'The file path'),
         ('line_saved', '\nDate: {date}\tmin:{time}\ttask:{task}', 'Line saved to file when user input a task'),
